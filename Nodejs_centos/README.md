@@ -1,5 +1,4 @@
-Run `sudo yum install -y nodejs` to install Node.js 14.x and npm.
-
+STEPS:
 You may run dnf if yum is not available:
      sudo dnf install -y nodejs
 
