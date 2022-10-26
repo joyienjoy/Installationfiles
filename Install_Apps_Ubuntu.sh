@@ -40,3 +40,4 @@ case $app in
 esac
 done
 echo " Required Application Installed"
+echo " Thank You for using the application"
