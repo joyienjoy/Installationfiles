@@ -39,3 +39,4 @@ case $app in
 ;;
 esac
 done
+echo " Required Application Installed"
