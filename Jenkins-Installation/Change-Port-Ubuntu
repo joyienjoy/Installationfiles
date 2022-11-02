@@ -1,0 +1,21 @@
+#By default, Jenkins listens at Port 8080
+
+To change this, so that Jenkins work on other user defined por, follow the steps.
+
+For Example, If you want to use Port 3000 for the operation:
+
+STEP 1: vi /etc/default/jenkins
+
+# port for HTTP connector (default 8080; disable with -1)
+
+HTTP_PORT=3000
+
+STEP 2: vi /usr/lib/systemd/system/jenkins.service
+
+Environment="JENKINS_PORT=3000"
+
+systemctl daemon-reload
+
+systemctl restart jenkins
+
+Check: VM-IP:3000 for jenkins 
