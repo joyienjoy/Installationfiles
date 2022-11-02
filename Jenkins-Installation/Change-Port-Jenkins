@@ -1,4 +1,6 @@
-#By default, Jenkins listens at Port 8080
+FOR UBUNTU 22.04
+----------------
+By default, Jenkins listens at Port 8080
 
 To change this, so that Jenkins work on other user defined por, follow the steps.
 
@@ -19,3 +21,7 @@ systemctl daemon-reload
 systemctl restart jenkins
 
 Check: VM-IP:3000 for jenkins 
+
+
+FOR CENTOS 7.9
+--------------
