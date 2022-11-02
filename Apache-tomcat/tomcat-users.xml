@@ -1,0 +1,9 @@
+In order to access the Apache Tomcat Server from external machine, edit the file:
+
+vi /etc/tomcat9/tomcat-users.xml   ---> In case of Ubuntu 22.04
+
+vi /etc/tomcat/tomcat-users.xml    ----> In case of CentOS 7
+
+
+<role rolename="admin-gui,manager-gui,manager-script,manager-jmx,manager-status,admin-gui"/>
+<user username="tomubuntu" password="ubuntu" roles="admin-gui,manager-gui,manager-script"/>
