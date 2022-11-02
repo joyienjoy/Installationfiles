@@ -13,6 +13,8 @@ echo "
 -----------------------------
 Apache Tomcat-9 Installation"
 apt-get install tomcat9
+apt-get install tomcat9-admin
+
 
 
 echo "
