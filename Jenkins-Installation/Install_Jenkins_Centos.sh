@@ -12,10 +12,18 @@ Setting Up Repository
 -------------------------------------------------
 "
 
-sudo wget -O /etc/yum.repos.d/jenkins.repo \
-    https://pkg.jenkins.io/redhat-stable/jenkins.repo
-sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+#sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    #https://pkg.jenkins.io/redhat-stable/jenkins.repo
+#sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+
+
+curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
+
+sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+
 sudo yum upgrade
+
+cat /etc/yum.repos.d/jenkins.repo
 
 echo "
 --------------------------------------------------
