@@ -1,3 +1,6 @@
+Go to Manage Jenkins >> Run Script Console
+
+
 def jobName = "Pipeline-stage-3"    #Use the pipeline name here
 
 def job = Jenkins.instance.getItem(jobName)
